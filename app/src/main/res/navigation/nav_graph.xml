@@ -1,0 +1,18 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_board">
+
+    <fragment
+        android:id="@+id/navigation_board"
+        android:name="com.example.connectfour.BoardFragment"
+        android:label="Connect Four"
+        tools:layout="@layout/fragment_board" />
+
+    <fragment
+        android:id="@+id/navigation_options"
+        android:name="com.example.connectfour.GameOptionsFragment"
+        android:label="Options"
+        tools:layout="@layout/fragment_game_options" />
+</navigation>

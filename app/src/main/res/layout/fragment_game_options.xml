@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.connectfour.GameOptionsFragment">
+
+    <!-- Textview for the options, added bolding, references string file -->
+    <TextView
+        android:id="@+id/optionsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/options"
+        android:textColor="@color/h1"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/difficultyContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Layout to stack difficulties section on top of each other -->
+    <LinearLayout
+        android:id="@+id/difficultyContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/optionsTitle">
+
+        <!-- Select Difficulty TextView -->
+        <TextView
+            android:id="@+id/selectDifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:text="@string/select_difficulty"
+            android:textColor="@color/h1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- RadioGroup for Difficulty Levels -->
+        <RadioGroup
+            android:id="@+id/difficultyRadioGroup"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!-- Easy -->
+            <RadioButton
+                android:id="@+id/easyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/easy"
+                android:textColor="@color/h1"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- Medium -->
+            <RadioButton
+                android:id="@+id/mediumButton"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:text="@string/medium"
+                android:textColor="@color/h1"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- Hard -->
+            <RadioButton
+                android:id="@+id/hardButton"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:text="@string/hard"
+                android:textColor="@color/h1"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
