@@ -1,3 +1,4 @@
 # connect-4
-Work in progress of the final project for CEN
-> connect four game application - java, xml, android sdk
+final project for CEN - work in progress
+
+connect four game application - java, xml, android sdk
