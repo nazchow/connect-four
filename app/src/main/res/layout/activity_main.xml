@@ -7,8 +7,6 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     tools:context=".MainActivity">
-
-    <!-- Toolbar at the top of the screen -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="0dp"
@@ -20,8 +18,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:title="Connect Four"
         app:titleTextColor="@android:color/white" />
-
-    <!-- FragmentContainerView below the Toolbar -->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
@@ -31,8 +27,6 @@
         app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
         app:navGraph="@navigation/nav_graph" />
-
-    <!-- BottomNavigationView at the bottom of the screen -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="0dp"

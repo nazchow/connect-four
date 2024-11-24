@@ -6,8 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background">
-
-    <!-- Textview, set to invisible -->
     <TextView
         android:id="@+id/optionsTitle"
         android:layout_width="110dp"
@@ -19,7 +17,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <!-- Button underneath textview, set to invisible -->
     <Button
         android:id="@+id/buttonTop"
         android:layout_marginTop="10dp"
@@ -30,8 +27,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/optionsTitle" />
-
-    <!-- 7x6 Grid of Buttons, style attribute set, added padding as well-->
     <GridLayout
         android:id="@+id/boardGrid"
         android:layout_width="match_parent"
@@ -47,7 +42,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonTop"
         app:layout_constraintVertical_bias="1.0">
-        <!-- Buttons -->
         <Button
             style="@style/circle"
             android:layout_width="35dp"

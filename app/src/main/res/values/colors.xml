@@ -3,19 +3,19 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="green">#129030</color>
+    <color name="green">6EC483</color>
     <color name="orange">#fc3</color>
     <color name="black">#000</color>
     <color name="blue">#446677</color>
     <color name="red">#de3724</color>
     <color name="brightBlue">#d44d13</color>
-    <color name="ballBlue">#4477dd</color>
-    <color name="ballRed">#ff4466</color>
+    <color name="ballBlue">#DCC863</color>
+    <color name="ballRed">#AD3C3C</color>
     <color name="ballWhite">#fff</color>
 
-    <color name="background">#fce803</color>
+    <color name="background">#1B233F</color>
 
-    <color name="h1">#000</color>
+    <color name="h1">#fff</color>
     <color name="h2">#000</color>
     <color name="h3">#000</color>
 

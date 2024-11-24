@@ -7,8 +7,6 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     tools:context="com.example.connectfour.GameOptionsFragment">
-
-    <!-- Textview for the options, added bolding, references string file -->
     <TextView
         android:id="@+id/optionsTitle"
         android:layout_width="wrap_content"
@@ -22,8 +20,6 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Layout to stack difficulties section on top of each other -->
     <LinearLayout
         android:id="@+id/difficultyContainer"
         android:layout_width="wrap_content"
@@ -36,8 +32,6 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/optionsTitle">
-
-        <!-- Select Difficulty TextView -->
         <TextView
             android:id="@+id/selectDifficulty"
             android:layout_width="wrap_content"
@@ -48,16 +42,12 @@
             android:textColor="@color/h1"
             android:textSize="20sp"
             android:textStyle="bold" />
-
-        <!-- RadioGroup for Difficulty Levels -->
         <RadioGroup
             android:id="@+id/difficultyRadioGroup"
             android:layout_width="82dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:orientation="vertical">
-
-            <!-- Easy -->
             <RadioButton
                 android:id="@+id/easyButton"
                 android:layout_width="wrap_content"
@@ -66,8 +56,6 @@
                 android:textColor="@color/h1"
                 android:textSize="15sp"
                 android:textStyle="bold" />
-
-            <!-- Medium -->
             <RadioButton
                 android:id="@+id/mediumButton"
                 android:layout_width="90dp"
@@ -76,8 +64,6 @@
                 android:textColor="@color/h1"
                 android:textSize="15sp"
                 android:textStyle="bold" />
-
-            <!-- Hard -->
             <RadioButton
                 android:id="@+id/hardButton"
                 android:layout_width="90dp"
