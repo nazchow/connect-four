@@ -1,4 +1,4 @@
-# connect four
+# connect four android app
 connect four game created using java and XML for ui design on android studio.  
 archive of my final project for CEN.
 
